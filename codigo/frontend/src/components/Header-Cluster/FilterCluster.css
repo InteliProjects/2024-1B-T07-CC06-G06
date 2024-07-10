@@ -1,0 +1,63 @@
+/* Styles for the header section */
+.header {
+  padding: 30px 30px;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  background: linear-gradient(to right, #2A438C 20%, #0477BF 80%);
+}
+
+/* Styles for the header filters section */
+.header-filters {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the title of the filters */
+.title-filters {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+/* Styles for the filter input */
+.filter-input {
+  margin-right: 10px;
+  padding: 0.7vw;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  color: #333;
+  font-size: 1rem;
+  width: 70%;
+}
+
+
+/* Styles for the filter input text */
+.filter-input-text {
+  margin-right: 10px;
+  padding: 0.7vw;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  color: #333;
+  font-size: 1rem;
+  width: 70%;
+}
+
+/* Styles for the filter button */
+.filter-button {
+  background: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #2A438C;
+  font-weight: bold;
+  padding: 0.7vw;
+}
+
+/* Add hover effect for the filter button */
+.filter-button:hover {
+  background: #f0f0f0;
+}

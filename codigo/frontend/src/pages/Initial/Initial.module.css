@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #003f7f, #0063b5);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 85vw;
+  height: 85vh;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 80%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.customFileUpload {
+  color: #003f7f;
+  text-decoration: underline;
+  display: inline-block;
+  padding: 40px 60px;
+  cursor: pointer;
+  border: 2px dashed #003f7f;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.fileInfo {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.fileInfo span {
+  margin-right: 10px;
+}
+
+.fileInfo button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submitButton {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  align-items: center;
+  background: #003f7f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.message {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.success {
+  color: green;
+  animation: pulse 2s infinite;
+}
+
+.error {
+  color: red;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

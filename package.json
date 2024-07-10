@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "fastapi": "^0.0.8",
+    "leaflet.markercluster": "^1.5.3",
+    "react-leaflet-markercluster": "^3.0.0-rc1",
+    "react-modal": "^3.16.1"
+  }
+}

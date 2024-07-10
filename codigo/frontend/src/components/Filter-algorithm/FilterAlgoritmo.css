@@ -1,0 +1,65 @@
+/* Styles for the header section */
+.header {
+    background: linear-gradient(to right, #2A438C 20%, #0477BF 80%);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+  }
+  
+  /* Styles for the header filters section */
+  .header-filters{
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles for the title of the filters */
+  .title-filters{
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  
+  /* Styles for the filter input text */
+  .filter-input-text{
+    margin-right: 10px;
+    margin-left: 10px;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    color: #A2A2A2;
+  }
+  
+  /* Styles for the filter button */
+  .filter-button {
+    background: white;
+    border: none; 
+    margin-right: 10px;
+    font-size: 16px; 
+    cursor: pointer; 
+    display: inline-block;
+    border-radius: 5px;
+    color: #2A438C;
+  }
+
+  /* Styles for the route filter button */
+.filter-button-route{
+  background: white;
+  border: none; 
+  padding: 5px 50px;
+  margin-left: 10px;
+  font-size: 16px; 
+  cursor: pointer; 
+  display: inline-block;
+  border-radius: 5px;
+  color: #2A438C;
+}
+
+.filter-button-route:hover, .filter-button:hover{
+  background: #2A438C;
+  color: white;
+}
+  
+  
+  

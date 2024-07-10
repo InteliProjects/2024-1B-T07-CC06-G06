@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "a00a2f5b-f685-4928-bfdc-464332e964b9",
+		"name": "Grupo6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7646857",
+		"_collection_link": "https://almosthackers.postman.co/workspace/Team-Workspace~fa9974b6-6cc1-4153-8c37-aa931a3d68c4/collection/7646857-a00a2f5b-f685-4928-bfdc-464332e964b9?action=share&source=collection_link&creator=7646857"
+	},
+	"item": [
+		{
+			"name": "Optimize Cluster",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/optimize?cluster_index=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"optimize"
+					],
+					"query": [
+						{
+							"key": "cluster_index",
+							"value": "0",
+							"description": "Número do cluster cujas rotas devem ser optimizadas."
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cluster Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "Carregar o arquivo \"dados.csv\" no formato INDICE;LATITUDE;LONGITUDE;CODIGO_ROTA;SEQUENCIA;LOGRADOURO;NUMERO",
+							"type": "file",
+							"src": "///wsl.localhost/Ubuntu-22.04/home/fuchsfelipel/code/inteli/2024-1B-T07-CC06-G06/codigo/backend/sample_files/test_data.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/cluster",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"cluster"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
